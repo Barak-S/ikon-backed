@@ -1,7 +1,6 @@
 class RegistrationsController < ApplicationController
 
     def create
-        puts "inside create action"
         user = User.create!(
             email: params["user"]["email"],
             password: params["user"]["password"],
